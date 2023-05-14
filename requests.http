@@ -1,0 +1,61 @@
+POST http://127.0.0.1:8000/owner/
+Content-Type: application/json
+
+{
+    "first_name": "Воланд",
+    "last_name": "Питерский"
+}
+
+###
+
+http://127.0.0.1:8000/owner/
+
+###
+
+POST http://127.0.0.1:8000/cats/
+Content-Type: application/json
+
+{
+    "name": "Рыжый Кот",
+    "color": "Рыжий",
+    "birth_year": 2020,
+    "owner": 2,
+    "achievements": [
+        {"name": "поймал птицу"},
+        {"name": "разбил вазу"}
+    ]
+}
+
+###
+
+POST http://127.0.0.1:8000/cats/
+Content-Type: application/json
+
+{
+    "name": "Рыжый Кот 2020",
+    "color": "Рыжий",
+    "birth_year": 2020,
+    "owner": 2
+}
+
+###
+
+http://127.0.0.1:8000/cats/
+
+###
+
+POST https://f50bca19-afa7-421e-94b2-23e4c7099ee4.serverhub.praktikum-services.ru/api/v1/posts/
+Content-Type: application/json
+
+{
+    "text": "Текст для моего поста",
+    "author": 1,
+    "tag": [
+        {"name": "хобби"},
+        {"name": "личное"}
+        ]
+} 
+
+###
+
+https://f50bca19-afa7-421e-94b2-23e4c7099ee4.serverhub.praktikum-services.ru/api/v1/posts/
